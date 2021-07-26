@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "leetcode-note"
+    }
+  },
+  "defaultProject": "leetcode-note",
+  "cli": {
+    "analytics": "1ef1524f-f78e-4c9d-beb1-2c1303b18005"
+  }
 }
