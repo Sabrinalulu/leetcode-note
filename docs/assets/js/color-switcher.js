@@ -63,8 +63,8 @@ jQuery(document).ready(function($) {
 
 
 //Inject Necessary Styles and HTML
-jQuery('head').append('<link rel="stylesheet" id="colors" href="/assets/css/colors/preset.css" type="text/css" />');
-jQuery('head').append('<link rel="stylesheet" href="/assets/css/color-switcher.css" type="text/css" />'); 
+jQuery('head').append('<link rel="stylesheet" id="colors" href="assets/css/colors/preset.css" type="text/css" />');
+jQuery('head').append('<link rel="stylesheet" href="assets/css/color-switcher.css" type="text/css" />'); 
 
 jQuery('body').append('' + 
 	'<div id="color-style-switcher">' +
