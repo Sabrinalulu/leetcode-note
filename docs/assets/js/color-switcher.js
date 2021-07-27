@@ -14,27 +14,27 @@ jQuery(document).ready(function($) {
 	});	
 
 	$("ul.colors .color2" ).click(function(){
-		$("#colors" ).attr("href", "/assets/css/colors/blue.css" );
+		$("#colors" ).attr("href", "assets/css/colors/blue.css" );
 		return false;
 	});	
 
 	$("ul.colors .color3" ).click(function(){
-		$("#colors" ).attr("href", "/assets/css/colors/turquoise.css" );
+		$("#colors" ).attr("href", "assets/css/colors/turquoise.css" );
 		return false;
 	});
 
 	$("ul.colors .color4" ).click(function(){
-		$("#colors" ).attr("href", "/assets/css/colors/pink.css" );
+		$("#colors" ).attr("href", "assets/css/colors/pink.css" );
 		return false;
 	});
 
 	$("ul.colors .color5" ).click(function(){
-		$("#colors" ).attr("href", "/assets/css/colors/wisteria.css" );
+		$("#colors" ).attr("href", "assets/css/colors/wisteria.css" );
 		return false;
 	});	
 
 	$("ul.colors .color6" ).click(function(){
-		$("#colors" ).attr("href", "/assets/css/colors/alizarin.css" );
+		$("#colors" ).attr("href", "assets/css/colors/alizarin.css" );
 		return false;
 	});
 
