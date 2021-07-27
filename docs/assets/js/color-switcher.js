@@ -9,32 +9,32 @@ window.console = window.console || (function(){
 jQuery(document).ready(function($) {
 	"use strict"
 	$("ul.colors .color1" ).click(function(){
-		$("#colors" ).attr("href", "../../assets/css/colors/preset.css" );
+		$("#colors" ).attr("href", "../css/colors/preset.css" );
 		return false;
 	});	
 
 	$("ul.colors .color2" ).click(function(){
-		$("#colors" ).attr("href", "../../assets/css/colors/blue.css" );
+		$("#colors" ).attr("href", "../css/colors/blue.css" );
 		return false;
 	});	
 
 	$("ul.colors .color3" ).click(function(){
-		$("#colors" ).attr("href", "../../assets/css/colors/turquoise.css" );
+		$("#colors" ).attr("href", "../css/colors/turquoise.css" );
 		return false;
 	});
 
 	$("ul.colors .color4" ).click(function(){
-		$("#colors" ).attr("href", "../../assets/css/colors/pink.css" );
+		$("#colors" ).attr("href", "../css/colors/pink.css" );
 		return false;
 	});
 
 	$("ul.colors .color5" ).click(function(){
-		$("#colors" ).attr("href", "../../assets/css/colors/wisteria.css" );
+		$("#colors" ).attr("href", "../css/colors/wisteria.css" );
 		return false;
 	});	
 
 	$("ul.colors .color6" ).click(function(){
-		$("#colors" ).attr("href", "../../assets/css/colors/alizarin.css" );
+		$("#colors" ).attr("href", "../css/colors/alizarin.css" );
 		return false;
 	});
 
@@ -63,8 +63,8 @@ jQuery(document).ready(function($) {
 
 
 //Inject Necessary Styles and HTML
-jQuery('head').append('<link rel="stylesheet" id="colors" href="../../assets/css/colors/preset.css" type="text/css" />');
-jQuery('head').append('<link rel="stylesheet" href="../../assets/css/color-switcher.css" type="text/css" />'); 
+jQuery('head').append('<link rel="stylesheet" id="colors" href="../css/colors/preset.css" type="text/css" />');
+jQuery('head').append('<link rel="stylesheet" href="../css/color-switcher.css" type="text/css" />'); 
 
 jQuery('body').append('' + 
 	'<div id="color-style-switcher">' +
