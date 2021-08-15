@@ -1,1 +1,26 @@
-<router-outlet></router-outlet>
+<nav class="navbar navbar-expand-md fixed-top scrolling-navbar bg-white">
+    <div class="container">         
+      <a class="navbar-brand" style="color:#f39c12"><span class="lni-bulb"></span>YIJU CHEN's WORKSPACE</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="lni-menu"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto w-100 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" routerLink='/home'>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink='/qstorage'>Practices</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/pjstorage">Projects</a>
+          </li>                            
+          <li class="nav-item">
+            <a class="nav-link page-scroll" routerLink="/">Resume</a>
+          </li>            
+        </ul>              
+      </div>
+    </div>
+  </nav>
+
+  <router-outlet></router-outlet>

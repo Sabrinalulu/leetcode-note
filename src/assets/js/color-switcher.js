@@ -8,37 +8,37 @@ window.console = window.console || (function(){
 
 jQuery(document).ready(function($) {
 	"use strict"
-	$("ul.colors .color1" ).click(function(){
-		$("#colors" ).attr("href", "../assets/css/colors/preset.css" );
+	$("ul.colors .color1" ).on('click', function(){
+		$("#colors").attr("href", "assets/css/colors/preset.css" );
 		return false;
 	});	
 
-	$("ul.colors .color2" ).click(function(){
-		$("#colors" ).attr("href", "../assets/css/colors/blue.css" );
+	$("ul.colors .color2" ).on('click', function(){
+		$("#colors").attr("href", "assets/css/colors/blue.css" );
 		return false;
 	});	
 
-	$("ul.colors .color3" ).click(function(){
-		$("#colors" ).attr("href", "../assets/css/colors/turquoise.css" );
+	$("ul.colors .color3" ).on('click', function(){
+		$("#colors").attr("href", "assets/css/colors/turquoise.css" );
 		return false;
 	});
 
-	$("ul.colors .color4" ).click(function(){
-		$("#colors" ).attr("href", "../assets/css/colors/pink.css" );
+	$("ul.colors .color4" ).on('click', function(){
+		$("#colors").attr("href", "assets/css/colors/pink.css" );
 		return false;
 	});
 
-	$("ul.colors .color5" ).click(function(){
-		$("#colors" ).attr("href", "../assets/css/colors/wisteria.css" );
+	$("ul.colors .color5" ).on('click', function(){
+		$("#colors").attr("href", "assets/css/colors/wisteria.css" );
 		return false;
 	});	
 
-	$("ul.colors .color6" ).click(function(){
-		$("#colors" ).attr("href", "../assets/css/colors/alizarin.css" );
+	$("ul.colors .color6" ).on('click', function(){
+		$("#colors").attr("href", "assets/css/colors/alizarin.css" );
 		return false;
 	});
 
-	$("#color-style-switcher .bottom a.settings").click(function(e){
+	$("#color-style-switcher .bottom a.settings").on('click', function(e){
 		e.preventDefault();
 		var div = $("#color-style-switcher");
 		if (div.css("left") === "-145px") {
@@ -52,7 +52,8 @@ jQuery(document).ready(function($) {
 		}
 	})
 
-	$("ul.colors li a").click(function(e){
+	// control the choice of colors
+	$("ul.colors li a").on('click', function(e){
 		e.preventDefault();
 		$(this).parent().parent().find("a").removeClass("active");
 		$(this).addClass("active");
@@ -60,11 +61,9 @@ jQuery(document).ready(function($) {
 
 });
 
-
-
 //Inject Necessary Styles and HTML
-jQuery('head').append('<link rel="stylesheet" id="colors" href="../assets/css/colors/preset.css" type="text/css" />');
-jQuery('head').append('<link rel="stylesheet" href="../assets/css/color-switcher.css" type="text/css" />'); 
+jQuery('head').append('<link id="colors" href="assets/css/colors/preset.css" type="text/css" />');
+jQuery('head').append('<link href="assets/css/color-switcher.css" type="text/css" />'); 
 
 jQuery('body').append('' + 
 	'<div id="color-style-switcher">' +

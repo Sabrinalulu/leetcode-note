@@ -90,8 +90,8 @@ ul.colors li a.color1.active:after, ul.colors li a.color8.active:after{
 /* Colors */
 
 /* light-version */
-ul.colors .color1 {  
-    background: #f39c12;  /* preset */
+ul.colors .color1 {
+    background: #f39c12;  /* preset */    
 }
 ul.colors .color2 {
     background: #1AB7D8;  /* blue */
